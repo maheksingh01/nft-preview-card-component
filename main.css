@@ -1,0 +1,133 @@
+
+@font-face {
+    font-family: Outfit-Light;
+    src: url(static/Outfit-Light.ttf);
+}
+@font-face {
+    font-family: Outfit-Regular;
+    src: url(static/Outfit-Regular.ttf);
+}
+@font-face {
+    font-family: Outfit-SemiBold;
+    src: url(static/Outfit-SemiBold.ttf);
+}
+
+body{
+    background-color: var(--clrBGmain);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+:root{
+    --clrSoftblue: hsl(215, 51%, 70%);
+    --clrCyan: hsl(178, 100%, 50%);
+    --clrBGmain: hsl(217, 54%, 11%);
+    --clrBGcard: hsl(216, 50%, 16%);
+    --clrline: hsl(215, 32%, 27%);
+    --clrWhite: hsl(0, 0%, 100%);
+    --clrBGeye: hsl(178, 100%, 50%, 0.5);
+}
+
+.NTF{
+    background-color: var(--clrBGcard);
+    width: 290px;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: Outfit-Light;
+}
+
+.NTF .image{
+    text-align: center;
+}
+
+.NTF .image img{
+    width: 290px;
+    border-radius: 5px;
+}
+
+.NTF .title h1{
+    color: var(--clrWhite);
+    font-family: Outfit-Regular;
+    font-size: 20px;
+    margin: 20px 0 20px 0;   
+}
+
+.NTF .caption p{
+    color: var(--clrSoftblue);
+    margin: 0 0 0 0;
+}
+
+.NTF .contant .pricetime{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.NTF .contant .pricetime .price{
+    color: var(--clrCyan);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.NTF .contant .pricetime .time{
+    color: var(--clrSoftblue);
+    display: flex;
+    align-items: center;
+}
+
+.NTF .contant .prof{
+    color: var(--clrSoftblue);
+    margin: 20px 0 15px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center; 
+}
+
+.NTF .contant .prof img{
+    width: 30px;
+    border: .5px var(--clrWhite) solid;
+    border-radius: 100%;
+}
+
+.NTF .contant .prof span{
+    color: var(--clrWhite);
+}
+
+.NTF hr{
+    color: var(--clrline);
+}
+
+.eye{
+    position: absolute;
+    background-image: url(images/icon-view.svg) no-repeat center;
+    background-color: var(--clrBGeye);
+    width: 290px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 129px;
+    border-radius: 5px;
+    transition: opacity .4s ease;
+    opacity: 0;
+ }
+ 
+ .eye:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+
+.NTF h1:hover{
+    color: var(--clrCyan);
+    cursor: pointer;
+}
+
+.NTF .contant .prof span:hover{
+    color: var(--clrCyan);
+    cursor: pointer;
+}
